@@ -400,6 +400,9 @@ footer p {
   .home-content p {
     font-size: 1rem;
   }
+  #home .button {
+    font-size: 18px;
+  }
 
   #about, #menu, #contact {
     padding: 50px 20px;
