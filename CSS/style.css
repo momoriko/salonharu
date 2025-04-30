@@ -1,0 +1,429 @@
+@charset "UTF-8";
+
+/* 共通部分--------------------- */
+html{
+    font-size:100%;
+}
+body{
+    font-family:"Yu Gothic Medium","遊ゴシック Medium", YuGothic,"遊ゴシック体", "ヒラギノ角ゴ Pro W3",sans-serif;
+line-height: 1.7;
+color:#432;
+background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width:100%;
+} 
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4% ;
+}
+
+/* 大きな背景画像 */
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+}
+
+/* 見出し */
+.page-title{
+    font-size: 3rem; 
+    color: #fff; /* 白文字 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 黒の柔らかい影 */
+    font-family: 'Philosopher', serif;
+    text-transform: none;
+    font-weight: normal;
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #000000 solid;
+    font-weight: normal;
+}
+/* ボタン */
+.button {
+    display: inline-block; /* インラインサイズに合わせる */
+    font-size: 1.375rem;
+    background: #f69190; 
+    color: #fff;
+    border-radius: 30px; /* もっと丸くする */
+    padding: 12px 24px; /* ちょっとだけ余白を調整 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ボタンの影 */
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+    white-space: nowrap; /* 複数行折り返し防止 */
+}
+  
+.button:hover {
+    color: #432;
+    background: #e8f690;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* 影も少し強くする */
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/* HEADER --------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    padding-bottom: 0;
+}
+
+.logo{
+    width: 210px;
+    margin-top: 14px;
+}
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #f69190;
+}
+
+/* ここまで確認済み　*/
+
+/*HOME------------------------------------*/
+.home-content{
+    text-align: left;
+    margin-top: 0;  /* 不要なマージンをリセット */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* 縦方向の中央寄せ */
+    align-items: flex-start;  /* ← 左寄せにする */
+    height: 90vh;             /* 画面の高さに合わせる */
+    padding-left: 5%;         /* 左に余白（お好みで調整） */
+}
+.break-mobile {
+  display: inline; /* 通常は横並び */
+}
+
+.home-content p{
+    font-size: 1.25rem;
+    margin: 10px 0 42px;
+    color: #fff;
+}
+#home {
+    background-color: rgba(231, 121, 198, 0.1);
+    background-image: url(../images/main-bg.jpg);
+    background-blend-mode: multiply;
+    background-position: center bottom; /* 画像の切り取り部分を一番下に */  
+    min-height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
+}
+#home .page-title{
+    text-transform: none;
+    color: #fff;    
+}
+
+/* ABOUT------------*/
+/* タイトル */
+#about {
+    background-color: #fff;
+    padding: 100px 170px;
+}
+#about .page-title {
+    color: #f69190;
+    text-align: center;
+    padding: 3%;
+}
+#about .small-title {
+    color: #432;
+    font-size: 25px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3%;
+    /*justify-content: center; /* 横中央寄せ（お好みで） */
+}
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    line-height: 2;
+    text-align: center;
+}
+
+strong {
+    color: #f69190;
+}
+
+.about-text2 {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 30px 20px;
+   background-color: #fdffcd;
+}
+
+.about-photo {
+    width: 440px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item-title {
+    color: #432;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 黒の柔らかい影 */
+    font-family: 'Philosopher', serif;
+}
+
+.feature-number {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fcd1d0;
+    color:  #666;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+  
+  .feature-content h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #f69190;
+}
+  
+  .feature-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-text p + p {
+    margin-top: 1em; /* または 20px とかでもOK */
+}
+
+/* Menu */
+#menu {
+    background-color: #f3dcdb; 
+    margin-top: 0; /* 念のため */
+    padding-bottom: 6rem; /* ← ここを追加または上書きして余白を広めに！ */
+    padding: 100px 170px;
+}
+
+#menu .page-title {
+    color: #f69190;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 黒の柔らかい影 */
+    font-family: 'Philosopher', serif;
+    text-align: center;
+    padding: 3%;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.menu-item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.item-title {
+    font-size: 1.5rem;
+    margin: 16px 0 8px;
+    color: #f69190;
+}
+.item-desc {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: left;
+}
+  
+/* お問い合わせ */
+#contact {
+    background-image: url(../images/contact-bg.png);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten; /* ← 明るく重ねる */
+    background-repeat: no-repeat;   /* ← 画像の繰り返しを防ぐ */
+    padding: 100px 170px;
+}
+#contact .page-title {
+    color: #f69190;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 黒の柔らかい影 */
+    font-family: 'Philosopher', serif;
+    text-align: center;
+    padding: 3%;
+}   
+
+/* フォーム */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+form div {
+    margin-bottom: 14px;
+    color: #666;
+    font-weight: bold;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* 入力欄をフォーム幅いっぱいに */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* パディング込みで幅を計算 */
+    background-color: #eee; /* 背景色（今のグレーに近い） */
+}
+textarea {
+    height: 150px; /* テキストエリアの高さを調整 */
+}
+
+#contact .button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* フッター ------------------------- */
+footer {
+    background: #fff;
+    text-align: center;
+    padding: 26px 0 ;
+}
+footer p {
+    color: #f69190;
+    font-size: 0.875rem;
+}   
+
+
+/* モバイル版 ---------------------------- */
+/* 600px以下のスマホ対応 */
+@media (max-width: 600px) {
+    .break-mobile {
+    display: block; /* スマホでは改行させる */
+  }
+    .page-title {
+        font-size: 25px;
+    }
+    
+    html {
+      font-size: 90%; /* 少し小さめに調整 */
+    }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .main-nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    margin: 10px 0 0 0;
+  }
+
+  .logo {
+    width: 180px;
+    margin-top: 10px;
+  }
+
+  #home {
+      text-align: center;
+      align-items: flex-start; 
+  }
+    
+  .home-content {
+    text-align: center;
+    align-items: flex-start; 
+    padding-left: 0;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  #about, #menu, #contact {
+    padding: 50px 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .menu-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    width: 90%;
+  }
+
+  form {
+    width: 100%;
+    padding: 0;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
