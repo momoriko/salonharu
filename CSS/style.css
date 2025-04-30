@@ -386,17 +386,25 @@ footer p {
     margin-top: 10px;
   }
 
+　.home-content {
+    text-align: center;
+    align-items: center;     /* 横方向中央揃え */
+    justify-content: center; /* 縦方向中央揃え */
+    padding-left: 0;
+    height: 90vh;            /* 画面いっぱいに */
+  }
+
+  .home-content .page-title,
+  .home-content p,
+  .home-content .button {
+    margin: 10px 0;
+  }
+
   #home {
       text-align: center;
       align-items: center; 
   }
     
-  .home-content {
-    text-align: center;
-    align-items: flex-start; 
-    padding-left: 0;
-  }
-
   .home-content p {
     font-size: 1rem;
   }
