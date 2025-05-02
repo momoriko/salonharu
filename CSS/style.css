@@ -121,11 +121,11 @@ iframe {
   display: inline; /* 通常は横並び */
 }
 
-/*.home-content p{
+.home-content p{
     font-size: 1.25rem;
-    margin: 10px 0 45px;
-
-}*/
+    margin: 10px 0 42px;
+    color: #fff;
+}
 #home {
     background-color: rgba(231, 121, 198, 0.1);
     background-image: url(../images/main-bg.jpg);
@@ -138,10 +138,6 @@ iframe {
 #home .page-title{
     text-transform: none;
     color: #fff;    
-}
-#home p {
-  margin-bottom: 45px; /* 任意の余白 */
-  color: #432;
 }
 
 /* ABOUT------------*/
@@ -167,7 +163,7 @@ iframe {
     gap: 30px;
     align-items: center;
     text-align: center;
-    padding-bottom: 54px;
+    padding-bottom: 3%;
     /*justify-content: center; /* 横中央寄せ（お好みで） */
 }
 .about-text {
@@ -196,43 +192,64 @@ strong {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.feature-item-title {
-    color: #432;
-    font-size: 25px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 黒の柔らかい影 */
-    font-family: 'Philosopher', serif;
+#features {
+    background-color: #fdf9c2; /* 淡い黄色 */
+    padding: 60px 20px;
 }
-
-.feature-number {
-    flex-shrink: 0;
+  
+.about-text2-title {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
+    color: #fff; /* 白文字 */
+    text-shadow:
+    0 0 3px #f69190,
+    0 0 6px #f69190,
+    0 0 9px #f69190;
+    font-family: 'Philosopher', serif;
+    text-transform: none;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+  
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+  
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+  
+.number-circle {
+    background-color: #e47c7b;
+    color: #fff;
+    border-radius: 50%;
     width: 36px;
     height: 36px;
-    border-radius: 50%;
-    background-color: #fcd1d0;
-    color:  #666;
-    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 1rem;
+    flex-shrink: 0;
 }
   
-  .feature-content h3 {
-    margin: 0 0 8px;
-    font-size: 18px;
-    color: #f69190;
+.feature-text h3 {
+    color: #e47c7b;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 6px;
 }
   
-  .feature-content p {
+.feature-text p {
+    color: #444;
+    font-size: 1rem;
     margin: 0;
-    font-size: 16px;
-    color: #666;
     line-height: 1.6;
-}
-
-.about-text p + p {
-    margin-top: 1em; /* または 20px とかでもOK */
 }
 
 /* Menu */
@@ -302,6 +319,14 @@ strong {
 }   
 
 /* フォーム */
+.contact-box {
+    background-color: #fff8f8;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: 0 auto;
+}
+  
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -355,7 +380,6 @@ footer p {
     color: #f69190;
     font-size: 0.875rem;
 }   
-
 
 /* モバイル版 ---------------------------- */
 /* 600px以下のスマホ対応 */
