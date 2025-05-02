@@ -139,6 +139,9 @@ iframe {
     text-transform: none;
     color: #fff;    
 }
+#home p {
+  margin-bottom: 45px; /* 任意の余白 */
+}
 
 /* ABOUT------------*/
 /* タイトル */
