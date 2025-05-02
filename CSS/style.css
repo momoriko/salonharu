@@ -121,11 +121,11 @@ iframe {
   display: inline; /* 通常は横並び */
 }
 
-.home-content p{
+/*.home-content p{
     font-size: 1.25rem;
     margin: 10px 0 45px;
 
-}
+}*/
 #home {
     background-color: rgba(231, 121, 198, 0.1);
     background-image: url(../images/main-bg.jpg);
