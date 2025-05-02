@@ -225,7 +225,7 @@ strong {
 }
   
 .number-circle {
-    background-color: #e47c7b;
+    background-color: #f69190;
     color: #fff;
     border-radius: 50%;
     width: 36px;
@@ -239,7 +239,7 @@ strong {
 }
   
 .feature-text h3 {
-    color: #e47c7b;
+    color: #f69190;
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 6px;
@@ -247,7 +247,7 @@ strong {
   
 .feature-text p {
     color: #444;
-    font-size: 1rem;
+    font-size: 16px;
     margin: 0;
     line-height: 1.6;
 }
