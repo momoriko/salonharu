@@ -123,7 +123,7 @@ iframe {
 
 .home-content p{
     font-size: 1.25rem;
-    margin: 10px 0 42px;
+    margin: 10px 0 45px;
     color: #fff;
 }
 #home {
@@ -418,6 +418,9 @@ footer p {
 
   .about-content {
     flex-direction: column;
+  }
+　#about .small-title {
+    font-size: 18px;
   }
 
   .menu-grid {
