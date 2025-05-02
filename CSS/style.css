@@ -125,6 +125,7 @@ iframe {
     font-size: 1.25rem;
     /*margin: 10px 0 45px;*/
     color: #fff;
+    padding-bottom: 45px;
 }
 #home {
     background-color: rgba(231, 121, 198, 0.1);
